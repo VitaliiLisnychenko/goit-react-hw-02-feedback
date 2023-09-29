@@ -1,3 +1,5 @@
+import { Item, List } from './Statistics.stayled';
+
 export const Statistics = ({
   good,
   neutral,
@@ -7,31 +9,23 @@ export const Statistics = ({
 }) => {
   return (
     <>
-      <list>
-        <item classname="">
+      <List>
+        <Item>
           Good: <span>{good}</span>
-        </item>
-      </list>
-      <list>
-        <item classname="">
+        </Item>
+        <Item>
           Neutral: <span>{neutral}</span>
-        </item>
-      </list>
-      <list>
-        <item classname="">
+        </Item>
+        <Item>
           Bad: <span>{bad}</span>
-        </item>
-      </list>
-      <list>
-        <item classname="">
+        </Item>
+        <Item>
           Total: <span>{total}</span>
-        </item>
-      </list>
-      <list>
-        <item classname="">
-          Positive faadback: <span>{positivePercentage}%</span>
-        </item>
-      </list>
+        </Item>
+        <Item>
+          Positive feedback: <span>{positivePercentage}%</span>
+        </Item>
+      </List>
     </>
   );
 };
